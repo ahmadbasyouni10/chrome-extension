@@ -11,7 +11,7 @@
             // to be implemented later, will add a button to the youtube player and allow add bookmarks
             newVideoLoaded()
     }})
-    
+
     function newVideoLoaded(){
         const bookmarkButtonExists = document.getElementsByClassName('bookmark-button').length > 0;
 
@@ -21,12 +21,12 @@
             console.log(bookmarkButton.src)
 
             bookmarkButton.title = "Bookmark current timestamp";
-            bookmarkButton.className = "bookmark-button";
-
-            bookmarkButton.style.width = "25px";
-            bookmarkButton.style.height = "25px";
-            bookmarkButton.style.margin = "10px 10px";
-            bookmarkButton.style.alignItems = "center";
+            bookmarkButton.className = "bookmark-button ytp-button";
+            bookmarkButton.style.transform = "scale(0.5)";
+            //bookmarkButton.style.width = "25px";
+            //bookmarkButton.style.height = "25px";
+            //bookmarkButton.style.margin = "10px 10px";
+            //bookmarkButton.style.alignItems = "center";
             bookmarkButton.style.cursor = "pointer";
             // query selector returns first element that matches the selector
             // the player of the video is stored in the video-stream class
